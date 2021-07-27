@@ -1,0 +1,77 @@
+@import '../Variables.scss';
+
+.header {
+    position: relative;
+    background-image: url(../../static/portada.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $color-primary;
+    height: 100vh;
+
+    &__nav {
+        position: relative;
+        height: 150px;
+        margin: auto;
+        width: 70%;
+        z-index: 20;
+
+        /* FLEX */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    &__opacity {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.2;
+        z-index: 10;
+    }
+
+    &__link {
+        cursor: pointer;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        margin-right: 40px;
+        text-transform: uppercase;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__button {
+        cursor: pointer;
+        font-size: 1.5rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        border: 1px solid white;
+        color: $color-primary;
+        background: transparent;
+        padding: 10px 30px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__title {
+        width: 100%;
+        height: calc(100vh - 160px);
+        padding-top: 90px;
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+
+    }
+
+    &__h1 {
+        font-weight: 500;
+        font-size: 7rem;
+        text-transform: uppercase;
+    }
+}
